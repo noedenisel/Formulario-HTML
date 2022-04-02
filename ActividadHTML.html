@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<HTML lang="ES">
+    <HEAD>
+        <title>ActividadHTML</title>
+    </head>
+    <body>
+        <form action="./procesaformulario.php"></form>
+        <h1>Formulario Información Alta Telefónica</h1>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for='nombre'>Nombre:</label>
+            <input type="text" id="nombre" value="" maxlength="30"/><br/>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" value= "" maxlength="60"/><br/>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" value="" maxlength="60"/><br/>
+            <label for="codigopostal">Código Postal:</label>
+            <input type="text" id="código postal" value="" pattern="[0-9]{5}" maxlength="5"/> <br/>
+            <label for="localidad">Localidad:</label>
+            <input type="text" id="localidad" value=""/><br/> 
+        </fieldset>
+        <fieldset>
+            <legend>Tipo de Contratación</legend>
+            <input type="radio" name="contratacion" value="0" checked=checked> Nueva Contratación <input type="radio" name="contratacion" value="1">Portabilidad <input type="radio" name="contratacion" value="2">Cambio de Contrato <br/>
+            <p>Elija la compañia actual <select name="compañia actual"><option>Movistar</option><option>Orange</option><Option>Vodafone</Option><option> No tengo ninguna compañia </option></select> En caso de portabilidad, elija la nueva compañia:<select name=portabilidad><option>Movistar</option><option>Orange</option><option>Vodafone</option><Option>Yoigo</Option></select></p>
+        </fieldset>
+        <fieldset>
+            <legend>Datos Bancarios</legend>
+            <label for="pais">País</label>
+            <input type="text" id="pais" value='ES' disabled />(sólo válido ES)<br/>
+            <label for="iban">Control IBAN:</label>
+            <input type="text" id="IBAN" placeholder="xx" pattern="[0-9]{2}"/>(dos dígitos)<br/>
+            <label for='entidad'>Entidad:</label>
+            <input type="text" id="entidad" placeholder="xxxx" pattern="[0-9]{4}"/>(cuatro digitos)<br/>
+            <label for="sucursal">Sucursal:</label>
+            <input type="text" id="sucursal" placeholder="xxxx" pattern="[0-9]{4}"/>(cuatro dígitos)<br/>
+            <label for="dc">DC:</label>
+            <input type="text" id="dc" placeholder="xx" pattern="[0-9]{2}"/>(dos dígitos)<br/>
+            <label for="cuenta">Cuenta:</label>
+            <input type="text" id="cuenta" placeholder="xxxxxxxxxx" pattern="[0-9]{10}"/>(diez dígitos)<br/>
+        </fieldset>
+        <button type="submit">Enviar Datos</button>
+        <button type="reset">Borrar Datos</button>
+    </form>
+    </body>
+    </HTML>
+
+
+
